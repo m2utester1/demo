@@ -15,5 +15,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://www.maybank2u.com.my/home/m2u/common/login.do')
 
+
+
+WebUI.setText(findTestObject('Page_Maybank2u/input_Humanising Banking_username'), 'kuhandran')
+
+WebUI.click(findTestObject('Page_Maybank2u/button_LOGIN'))
+
+WebUI.delay(3)
+
 WebUI.closeBrowser()
 
